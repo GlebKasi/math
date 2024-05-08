@@ -44,13 +44,13 @@ wight = 1
 time = 1
 M = 10
 N = 10
-dx = wight/M
-dt = time/N
 y_show = []
 x_show = []
 for j in range(5):
     res = 0
     count = 0
+    dx = wight/M
+    dt = time/N
     y_1 = []
     y_2 = []
     y_3 = []
@@ -88,4 +88,4 @@ def k(x, y):
        b = b + (x[i] - aver(x)) ** 2
     return a/b
 
-print((k(x_show, y_show)))
+print(((-1)*k(x_show, y_show)))
